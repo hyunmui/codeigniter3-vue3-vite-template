@@ -1,0 +1,28 @@
+{
+  "name": "codeigniter3-vue3-vite-template",
+  "version": "1.0.0",
+  "description": "Codeigniter 3 + Vue 3 + Vite Project",
+  "scripts": {
+    "build:all": "npm run build --workspaces",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyunmui/codeigniter3-vue3-vite-template.git"
+  },
+  "keywords": [
+    "Codeigniter",
+    "Vue",
+    "Vite"
+  ],
+  "author": "Martin Seon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hyunmui/codeigniter3-vue3-vite-template/issues"
+  },
+  "homepage": "https://github.com/hyunmui/codeigniter3-vue3-vite-template#readme",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
