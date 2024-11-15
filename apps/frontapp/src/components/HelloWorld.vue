@@ -1,7 +1,7 @@
 <script setup lang="ts">
 defineProps<{
-  msg: string
-}>()
+  msg: string;
+}>();
 </script>
 
 <template>
@@ -25,6 +25,7 @@ h1 {
 
 h3 {
   font-size: 1.2rem;
+  font-weight: normal;
 }
 
 .greetings h1,

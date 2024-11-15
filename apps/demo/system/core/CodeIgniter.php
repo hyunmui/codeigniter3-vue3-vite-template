@@ -37,6 +37,7 @@
  * @since	Version 1.0.0
  * @filesource
  */
+
 defined('BASEPATH') or exit('No direct script access allowed');
 
 /**
@@ -279,6 +280,7 @@ $UNI = &load_class('Utf8', 'core');
  *  Instantiate the URI class
  * ------------------------------------------------------
  */
+/** @var \CI_URI */
 $URI = &load_class('URI', 'core');
 
 /*
@@ -286,6 +288,7 @@ $URI = &load_class('URI', 'core');
  *  Instantiate the routing class and set the routing
  * ------------------------------------------------------
  */
+/** @var \CI_Router */
 $RTR = &load_class('Router', 'core', isset($routing) ? $routing : NULL);
 
 /*
@@ -293,6 +296,7 @@ $RTR = &load_class('Router', 'core', isset($routing) ? $routing : NULL);
  *  Instantiate the output class
  * ------------------------------------------------------
  */
+/** @var \CI_Output */
 $OUT = &load_class('Output', 'core');
 
 /*
@@ -309,6 +313,7 @@ if ($EXT->call_hook('cache_override') === FALSE && $OUT->_display_cache($CFG, $U
  * Load the security class for xss and csrf support
  * -----------------------------------------------------
  */
+/** @var \CI_Security */
 $SEC = &load_class('Security', 'core');
 
 /*
@@ -316,6 +321,7 @@ $SEC = &load_class('Security', 'core');
  *  Load the Input class and sanitize globals
  * ------------------------------------------------------
  */
+/** @var \CI_Input */
 $IN	= &load_class('Input', 'core');
 
 /*
@@ -339,7 +345,7 @@ require_once BASEPATH . 'core/Controller.php';
  *
  * Returns current CI instance object
  *
- * @return CI_Controller
+ * @return App\Core\BaseController
  */
 function &get_instance()
 {

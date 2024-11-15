@@ -22,6 +22,6 @@ export default defineConfig({
   },
   server: {
     port: 4173,
-    origin: 'http://localhost:4173/',
+    origin: "http://localhost:4173",
   },
 });

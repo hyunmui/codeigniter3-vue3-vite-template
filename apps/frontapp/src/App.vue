@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import HelloWorld from "./components/HelloWorld.vue";
 import TheWelcome from "./components/TheWelcome.vue";
+import { setupCounter } from "core";
+
+window.onload = () => {
+  setupCounter(document.querySelector<HTMLButtonElement>("#counter")!);
+};
 </script>
 
 <template>
@@ -15,6 +20,8 @@ import TheWelcome from "./components/TheWelcome.vue";
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
+
+      <button type="button" id="counter">&nbsp;</button>
     </div>
   </header>
 
@@ -31,6 +38,21 @@ header {
 .logo {
   display: block;
   margin: 0 auto 2rem;
+}
+
+#counter {
+  margin-top: 30px;
+  color: #fff;
+  background-color: #41b883;
+  border: 0;
+  padding: 0.625rem;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  width: 50%;
+}
+
+#counter:hover {
+  background-color: #42b883aa;
 }
 
 @media (min-width: 1024px) {

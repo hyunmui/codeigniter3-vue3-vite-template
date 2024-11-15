@@ -5,9 +5,15 @@
 	"autoload": {
 		"psr-4": {
 			"App\\": "src/"
-		}
+		},
+		"files": [
+			"src/functions.php",
+			"src/bootstrap.php"
+		]
 	},
 	"require": {
-		"mindplay/php-vite": "^1.0"
+		"mindplay/php-vite": "^1.0",
+		"monolog/monolog": "^3.8",
+		"twig/twig": "^3.0"
 	}
 }

@@ -453,13 +453,13 @@ if ( ! function_exists('log_message'))
 	 * We use this as a simple mechanism to access the logging
 	 * class and send messages to be logged.
 	 *
-	 * @param	string	the error level: 'error', 'debug' or 'info'
+	 * @param	MonoLog\Level|string	the error level: 'error', 'debug' or 'info'
 	 * @param	string	the error message
 	 * @return	void
 	 */
 	function log_message($level, $message)
 	{
-		static $_log;
+		global $_log;
 
 		if ($_log === NULL)
 		{

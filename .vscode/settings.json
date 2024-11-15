@@ -3,5 +3,11 @@
     {
       "mode": "auto"
     }
-  ]
+  ],
+  "files.associations": {
+    "*.twig": "twig"
+  },
+  "emmet.includeLanguages": {
+    "twig": "html"
+  }
 }
