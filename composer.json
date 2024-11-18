@@ -2,6 +2,13 @@
   "name": "hyunmui/codeigniter3-vue3-vite-template",
   "description": "Codeigniter 3 + Vue 3 + Vite Template",
   "type": "project",
+  "keywords": [
+    "codeigniter3",
+    "vue",
+    "vite"
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "license": "MIT",
   "authors": [
     {
