@@ -7,6 +7,12 @@
     "vue",
     "vite"
   ],
+  "version": "1.0.0",
+  "source": {
+    "type": "git",
+    "url": "https://github.com/hyunmui/codeigniter3-vue3-vite-template.git",
+    "reference": "master"
+  },
   "minimum-stability": "dev",
   "prefer-stable": true,
   "license": "MIT",
