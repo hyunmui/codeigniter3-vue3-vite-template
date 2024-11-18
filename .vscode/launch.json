@@ -24,7 +24,7 @@
       }
     },
     {
-      "name": "Demo - Launch Built-in web server",
+      "name": "Launch Built-in PHP web server & Front App",
       "type": "php",
       "request": "launch",
       "runtimeArgs": [
